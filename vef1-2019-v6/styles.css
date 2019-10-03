@@ -72,10 +72,6 @@ h1 {
   .grid__row {
     flex-direction: row;
   }
-
-  .cards__col {
-    width: 33.3333%;
-  }
 }
 
 /* TODO koma mynd fyrir á öðrum stað í < 1000px */
@@ -122,6 +118,13 @@ h1 {
   padding-left: 10px;  
   margin-bottom: 20px; 
 }
+
+@media(min-width: 1000px) {
+  .cards__col {
+    width: 33.3333%;
+  }
+}
+
 
 /*
   .card kemur óbreytt úr sýnilausn á verkefni 5 fyrir utan responsive stíla og
