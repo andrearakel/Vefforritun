@@ -63,7 +63,43 @@ h1 {
 
 /* TODO setja upp grid fyrir >= 1000px */
 
+@media(min-width: 1000px) {
+  .grid__col {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  .grid__row {
+    flex-direction: row;
+  }
+
+  .cards__col {
+    width: 33.3333%;
+  }
+}
+
 /* TODO koma mynd fyrir á öðrum stað í < 1000px */
+
+@media (max-width: 699px) {
+  .grid__col {
+    width: 100%;
+  }
+
+  .cards__col {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .cards__col {
+    width: 50%; 
+  }
+
+  .cards {
+    margin-bottom: 40px; 
+  }
+}
+
 
 /* grid fyrir cards */
 
@@ -161,3 +197,26 @@ h1 {
 
 /* TODO responsive stílar fyrir .card */
 
+@media (max-width: 699px) {
+  .card {
+    width: initial;
+    height: initial;
+    border: none; 
+    border-bottom: 2px solid #aaa; 
+    padding: 0; 
+    padding-bottom: 20px; 
+
+  }
+
+  .card__content {
+    flex-direction: column;
+  }
+
+  .card__text {
+    margin-bottom: 20px;     
+  }
+
+  .card__image {
+    padding-left: 0;
+  }
+}
