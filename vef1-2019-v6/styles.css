@@ -22,6 +22,12 @@ main {
 
 /* TODO taka ætti padding af main þegar komið er fyrir ofan hámarksbreidd */
 
+@media (min-width: 1490px) {
+  main {
+    padding: 0; 
+  }
+}
+
 h1 {
   text-align: center;
   margin: 20px 0;
@@ -62,9 +68,24 @@ h1 {
 /* grid fyrir cards */
 
 .cards {
+  overflow: hidden;
 }
 
 /* TODO útfæra grid fyrir cards */
+
+.cards__row {
+  display: flex; 
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px; 
+}
+
+.cards__col {
+  width: 100%; 
+  padding-right: 10px;
+  padding-left: 10px;  
+  margin-bottom: 20px; 
+}
 
 /*
   .card kemur óbreytt úr sýnilausn á verkefni 5 fyrir utan responsive stíla og
@@ -72,6 +93,71 @@ h1 {
   Sýnilausn verður gefin út við lok dags miðvikudaginn 3. okt
 */
 
+.card {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 100%; 
+  width: 100%;
+  max-width: 470px;
+  max-height: 320px;
+  overflow: auto;
+
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+}
+
 /* TODO .card stílar úr v5 (eða sýnilausn...) */
 
+.card__title {
+  margin-bottom: 20px;
+
+  font-size: 1.5em;
+  line-height: 1;
+  word-break: break-word;
+}
+
+.card__content {
+  display: flex;
+  flex: 1;
+}
+
+.card__text {
+  font-size: 1em;
+  line-height: 1.20;
+  word-break: break-word;
+}
+
+.card__image {
+  padding-right: 20px;
+  flex: 0 0 150px;
+}
+
+.card__img {
+  max-width: 100%;
+}
+
+.card__tags {
+  margin-top: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  list-style: none;
+}
+
+.card__tag {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.cards--first-flex-item {
+  order: -1;
+}
+
 /* TODO responsive stílar fyrir .card */
+
