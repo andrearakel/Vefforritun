@@ -16,8 +16,8 @@
 
     <div class="grid">
 
-      <div>
-        <div>
+      <div class="grid__row">
+        <div class="grid__col col-1">
           <div class="text">
             <p>Cras ac erat tempor, scelerisque eros id, pharetra erat. Morbi eu massa suscipit elit mattis auctor. Nunc
               sit amet massa dictum dolor convallis maximus. Etiam nec aliquam quam. Nulla convallis ornare semper.
@@ -42,16 +42,16 @@
               consequat leo et aliquam iaculis.</p>
           </div>
         </div>
-        <div>
+        <div class="grid__col col-2">
           <img class="image" src="palms1.jpg" alt="Afskaplega lorem-ipsum-leg pálmatré">
         </div>
       </div>
 
-      <div>
-        <div>
+      <div class="grid__row">
+        <div class="col col-3">
           <img class="image" src="palms2.jpg" alt="Jafnvel lorem-ipsum-legri pálmatré">
         </div>
-        <div>
+        <div class="col col-4">
           <div class="text">
             <p>Nunc ornare libero sit amet felis faucibus tincidunt laoreet sed magna. Etiam volutpat augue quis sapien
               pharetra, efficitur semper ipsum aliquet. Duis commodo elit libero, et vestibulum tellus scelerisque eu.
@@ -81,15 +81,15 @@
     </div>
 
     <div class="cards">
-      <div>
-        <div>
+      <div class="cards__row"> 
+        <div class="cards__col">
           <section class="card">
-            <h2>Aliquam erat volutpat in dignissim id sagittis nec leo</h2>
-            <div>
-              <div>
-                <img src="img.jpg" alt="">
+            <h2 class="card__title">Aliquam erat volutpat in dignissim id sagittis nec leo</h2>
+            <div class="card__content">
+              <div class="card__image">
+                <img class="card__img" src="img.jpg" alt="">
               </div>
-              <div>
+              <div class="card__text">
                 <p>Pellentesque sem lectus, posuere in dignissim id, sagittis nec leo. Aliquam erat volutpat. Proin dui
                   leo, maximus sed odio et, vestibulum tempus mauris.</p>
               </div>
@@ -97,11 +97,11 @@
           </section>
         </div>
 
-        <div>
+        <div class="cards__col">
           <section class="card">
-            <h2>Loremipsumdolorsitametconsecteturadipiscingelit</h2>
-            <div>
-              <div>
+            <h2 class="card__title">Loremipsumdolorsitametconsecteturadipiscingelit</h2>
+            <div class="card__content">
+              <div class="card__text">
                 <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Pellentesque sem lectus,
                   posuere in dignissim id, sagittis nec leo. Aliquam erat volutpat. Proin dui leo, maximus sed odio et,
                   vestibulum tempus mauris.</p>
@@ -114,14 +114,14 @@
           </section>
         </div>
 
-        <div>
+        <div class="cards__col">
           <section class="card">
-            <h2>Proin dui leo</h2>
-            <div>
-              <div>
-                <img src="img.jpg" alt="">
+            <h2 class="card__title">Proin dui leo</h2>
+            <div class="card__content">
+              <div class="card__image">
+                <img class="card__img" src="img.jpg" alt="">
               </div>
-              <div>
+              <div class="card__text">
                 <p>Pellentesque sem lectus, posuere in dignissim id, sagittis nec leo. Aliquam erat volutpat. Proin dui
                   leo, maximus sed odio et, vestibulum tempus mauris. Loremipsumdolorsitametconsecteturadipiscingelit.
                 </p>
@@ -136,31 +136,31 @@
           </section>
         </div>
 
-        <div>
+        <div class="cards_col">
           <section class="card">
-            <h2>Lorem ipsum</h2>
-            <div>
-              <div>
+            <h2 class="card__title">Lorem ipsum</h2>
+            <div class="card__content">
+              <div class="card__text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam justo ac semper pharetra.
                   Sed eu libero nec felis eleifend venenatis eu ac urna. Praesent pretium nisi scelerisque nibh accumsan
                   tempus.</p>
               </div>
             </div>
-            <ul>
-              <li>lorem</li>
-              <li>ipsum</li>
+            <ul class="card__tags">
+              <li class="card__tag">lorem</li>
+              <li class="card__tag">ipsum</li>
             </ul>
           </section>
         </div>
 
-        <div>
+        <div class="cards__col">
           <section class="card">
-            <h2>Lorem ipsum</h2>
-            <div>
-              <div>
-                <img src="img.jpg" alt="">
+            <h2 class="card__title">Lorem ipsum</h2>
+            <div class="card__content">
+              <div class="card__image">
+                <img class="card__img" src="img.jpg" alt="">
               </div>
-              <div>
+              <div class="card__text">
                 <p>Pellentesque sem lectus, posuere in dignissim id, sagittis nec leo. Aliquam erat volutpat. Proin dui
                   leo, maximus sed odio et, vestibulum tempus mauris. Loremipsumdolorsitametconsecteturadipiscingelit.
                 </p>
@@ -172,24 +172,24 @@
                 </p>
               </div>
             </div>
-            <ul>
-              <li>lorem</li>
-              <li>ipsum</li>
-              <li>dolor</li>
-              <li>foo</li>
-              <li>bar</li>
-              <li>baz</li>
-              <li>lorem-ipsum</li>
-              <li>dolor-sit-amet</li>
+            <ul class="card__tags">
+              <li class="card__tag">lorem</li>
+              <li class="card__tag">ipsum</li>
+              <li class="card__tag">dolor</li>
+              <li class="card__tag">foo</li>
+              <li class="card__tag">bar</li>
+              <li class="card__tag">baz</li>
+              <li class="card__tag">lorem-ipsum</li>
+              <li class="card__tag">dolor-sit-amet</li>
             </ul>
           </section>
         </div>
 
         <div class="cards__col cards--first-flex-item">
           <section class="card">
-            <h2>Lorem ipsum</h2>
-            <div>
-              <div>
+            <h2 class="card__title">Lorem ipsum</h2>
+            <div class="card__content">
+              <div class="card__text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam justo ac semper pharetra.
                   Sed eu libero nec felis eleifend venenatis eu ac urna. Praesent pretium nisi scelerisque nibh accumsan
                   tempus.</p>
@@ -201,8 +201,8 @@
     </div>
 
     <div class="grid">
-      <div>
-        <div>
+      <div class="grid__row">
+        <div class="grid__col col-5">
           <div class="text">
             <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas
               fermentum id nulla in iaculis. Vivamus mollis eros non erat mollis tincidunt. Duis volutpat ultrices
@@ -231,7 +231,7 @@
               augue posuere vel.</p>
           </div>
         </div>
-        <div>
+        <div class="grid__col col-6">
           <img class="image" src="palms3.jpg" alt="lorem-ipsum-legustu pálmatrén">
         </div>
       </div>
