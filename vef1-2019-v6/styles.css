@@ -76,6 +76,16 @@ h1 {
 
 /* TODO koma mynd fyrir á öðrum stað í < 1000px */
 
+.grid__row:nth-child(2n) .grid__col:first-child {
+  order: 2; 
+}
+
+@media (min-width: 1000px) {
+  .grid__row:nth-child(2n) .grid__col:first-child {
+    order: 0;
+  }
+}
+
 @media (max-width: 699px) {
   .grid__col {
     width: 100%;
@@ -86,15 +96,6 @@ h1 {
   }
 }
 
-@media (min-width: 700px) {
-  .cards__col {
-    width: 50%; 
-  }
-
-  .cards {
-    margin-bottom: 40px; 
-  }
-}
 
 
 /* grid fyrir cards */
@@ -119,12 +120,21 @@ h1 {
   margin-bottom: 20px; 
 }
 
+@media (min-width: 700px) {
+  .cards__col {
+    width: 50%; 
+  }
+
+  .cards {
+    margin-bottom: 40px; 
+  }
+}
+
 @media(min-width: 1000px) {
   .cards__col {
     width: 33.3333%;
   }
 }
-
 
 /*
   .card kemur óbreytt úr sýnilausn á verkefni 5 fyrir utan responsive stíla og
