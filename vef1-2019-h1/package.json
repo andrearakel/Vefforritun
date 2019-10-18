@@ -6,8 +6,8 @@
   "scripts": {
     "browser-sync": "browser-sync start --server --files index.html styles.css",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
-    "sass-watch": "node-sass --source-map-embed --watch styles.scss styles.css",
-    "dev": "npm-run-all --parallel sass browser-sync",
+    "sass-watch": "node-sass --source-map-embed --watch --recursive styles.scss styles.css",
+    "dev": "npm-run-all --parallel sass sass-watch browser-sync",
     "lint": "stylelint styles.scss --syntax scss"
   },
   "author": "Andrea",
