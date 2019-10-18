@@ -18,13 +18,32 @@
     margin-right: -($gutter / 2); 
     margin-left: -($gutter / 2);  
     margin-bottom: $gutter * 2; 
+
+    @media(max-width: 800px) {
+    
+    }
+
+    @media(min-width: 801px) {
+        flex-direction: row;
+    }
+
   }
 
   &__col {
     width: 100%; 
     margin-bottom: $gutter; 
     padding-right: $gutter / 2; 
-    padding-left: $gutter / 2; 
+    padding-left: $gutter / 2;
+
+    @media(max-width: 800px) {
+
+    }
+    
+    @media(min-width: 801px) {
+        padding-left: $gutter * 3;
+        width: 50%;
+        margin-bottom: $gutter;
+    }
   }
 
   &__title {
@@ -52,7 +71,7 @@
   &__copyright {
     width: 100%; 
     max-width: $max-width; 
-    font-size: 0.875rem; 
+    font-size: $size12; 
     text-align: center; 
   }
 
