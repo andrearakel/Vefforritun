@@ -5,29 +5,8 @@
   flex-wrap: wrap;
   margin-bottom: $gutter;
 
-  &__text {
-    display: flex; 
-    flex-direction: column; 
-    font-size: 1.125rem;
-
-    padding-left: $gutter;
-    margin-bottom: $gutter * 2; 
-
-    @media(max-width: $max-width) {
-      padding: auto 0; 
-      margin-bottom: 0; 
-    }
-  }
-
-  &__h2 {
-    font-family: $font-heading; 
-    font-size: 2rem; 
-    margin-bottom: $gutter * 2; 
-  }
-
-  &__p {
-    font-family: $font-main;
-    margin-bottom: $gutter * 2; 
+  @media(max-width: $max-width) {
+    padding: 0; 
   }
 
   &__row {
@@ -35,6 +14,14 @@
     flex-direction: column;  
     margin-right: -($gutter / 2);
     margin-left: -($gutter / 2); 
+
+    @media(max-width: 799px){
+      flex-direction: column;     
+    }
+
+    @media(min-width: 800px) {
+      flex-direction: row;
+    }
   }
 
   &__col {
@@ -42,20 +29,44 @@
     padding-right: $gutter / 2; 
     padding-left: $gutter / 2; 
     margin-bottom: $gutter; 
+
+    @media(min-width: 800px) {
+        width: 50%;
+        margin-bottom: $gutter;
+    }
+  }
+
+  &__row:nth-child(n) &__col:first-child {
+    order: 2;
+    
+    @media(max-width: 799px) {
+      order: 0; 
+    }
   }
 
   &__row:nth-child(2n) &__col:first-child {
-    order: 2; 
+    order: 0;
   }
 
-  @media(max-width: 500px) {
-    &__row:nth-child(2n) &__col:first-child {
-      order: 0; 
-    }
-  
+  &__text {
+    display: flex; 
+    flex-direction: column; 
+    font-size: $size21;
+
+    padding-left: $gutter;
+    margin-bottom: $gutter * 2; 
+
   }
 
-  
+  &__h2 {
+    font-family: $font-heading; 
+    font-size: $size36; 
+    margin-bottom: $gutter * 2; 
+  }
 
-
+  &__p {
+    font-family: $font-main;
+    margin-bottom: $gutter * 2; 
+  }
+ 
 }
