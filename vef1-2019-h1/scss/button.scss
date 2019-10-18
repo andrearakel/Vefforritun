@@ -1,0 +1,24 @@
+@import "scss/config.scss";
+
+.button {
+  background-color: $blue;
+  display: inline-block;
+  
+  font-family: $font-main;
+  font-size: $size16;
+  color: $black;
+  text-align: center; 
+  text-decoration: none;
+
+  width: 100%; 
+  max-width: 250px;
+  padding: 10px;
+  border-radius: 5px;   
+
+  transition: color $transition, background-color $transition; 
+
+  &:hover {
+    color: $white; 
+    background-color: $orange; 
+  }
+}
