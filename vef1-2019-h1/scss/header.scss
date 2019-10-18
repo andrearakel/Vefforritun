@@ -13,7 +13,7 @@
 
   &__title {
     font-family: $font-heading; 
-    font-size: 3.75rem; 
+    font-size: $size60; 
     font-weight: bold;
     margin-bottom: $gutter; 
     text-align: center; 
@@ -36,7 +36,7 @@
   &__li {
     display: flex; 
     margin-right: $gutter/2;
-    font-size: 1rem;
+    font-size: $size16;
   }
 
   &__a {
