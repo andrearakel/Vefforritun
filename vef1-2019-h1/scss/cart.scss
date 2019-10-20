@@ -1,0 +1,129 @@
+@import "scss/config.scss";
+
+.cart {
+  display: flex;
+  height: 100%; 
+  flex-direction: column;
+  
+  &__title {
+    font-size: $size36;
+    font-family: $font-heading;
+    margin-bottom: $gutter;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: $gutter * 2;
+    margin-right: -($gutter / 2);
+    margin-left: -($gutter / 2);
+  }
+
+  &__col {
+    width: 100%; 
+    margin-bottom: $gutter; 
+    padding-right: $gutter / 2; 
+    padding-left: $gutter / 2;
+
+    @media(min-width: 800px) {
+      width: 33.333%;
+      margin-bottom: 0; 
+      padding-right: $gutter / 2; 
+      padding-left: $gutter / 2;
+    }
+  }
+
+  &__coltext {
+    width: 100%; 
+    margin-bottom: $gutter; 
+    padding-right: $gutter / 2; 
+    padding-left: $gutter / 2;
+
+    @media(min-width: 800px) {
+      width: 66.667%; 
+      margin-bottom: $gutter; 
+      padding-right: $gutter / 2; 
+      padding-left: $gutter / 2;
+    }
+
+  }
+
+  &__text {
+    height: 90%;
+    
+    @media(max-width:800px) {
+      height: 60%;
+    }
+  }
+
+  &__h3 {
+    font-family: $font-heading;
+    font-size: $size36;
+    margin-bottom: $gutter / 2;
+  }
+
+  &__p {
+    font-size: $size18;
+    height: 60%;
+
+    @media(max-width:800px) {
+      height: 30%;
+    }
+  }
+
+  &__price {
+    font-size: $size21;
+    font-family: $font-heading;
+    font-weight: bold;
+    margin-bottom: $gutter * 2;
+  }
+
+  &__clickon {
+    margin-bottom: $gutter * 3;
+    display: flex; 
+    align-items: flex-end;
+  }
+
+  &__label {
+    display: block;
+    flex: 0 1 100px;
+    margin-right: $gutter / 2; 
+    font-size: $size16;
+  }
+
+  &__input {
+    width: 100px;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid $black;
+    border-radius: 2px;  
+    font-size: $size16;
+  }
+
+  &__button {
+    padding: 8px; 
+    margin-right: 10px; 
+    border: 1px solid $black;
+    border-radius: 2px; 
+    font-size: $size16;
+    background-color: lightgrey;
+    transition: color $transition;
+
+    &:hover {
+      background-color: $blue;
+      border-color: $blue;
+    }
+
+  }
+
+  &__imgcart {
+    height: 15px;
+  }
+
+  &__buybutton {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: $gutter * 2; 
+  }
+
+}
