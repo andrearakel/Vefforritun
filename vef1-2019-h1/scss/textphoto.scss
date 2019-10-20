@@ -16,7 +16,8 @@
     margin-left: -($gutter / 2); 
 
     @media(max-width: 799px){
-      flex-direction: column;     
+      flex-direction: column;
+      padding-left: $gutter;      
     }
 
     @media(min-width: 800px) {
