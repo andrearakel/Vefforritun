@@ -7,7 +7,16 @@ Slóð á síðuna aðgengileg á vefnum er: https://notendur.hi.is/~ars59/veffo
 
 ## Lýsing
 
+SCSS: 
 Hver síða hefur sitt eigið SCSS skjal. Þeir partar sem eru síðan eins á mörgum síðum eins og header, footer, upplýsingaformin og hnappar fengu síðan sína eigin SCSS skrá og vitnað er þá í viðeigandi classa inn í HTML-inu. Config SCSS inniheldur breytur sem notaðar voru mjög oft inn í hinum SCSS skjölunum. 
+
+Pages: 
+Inniheldur HTML skjöl fyrir vörur, námskeið, starfsfólk og körfu. 
+
+Img: 
+Myndir fyrir síðuna. 
+
+Index.html er forsíðan og er staðsett í aðalmöppu. SCSS skjalið fyrir main hluta hennar er að finna í SCSS möppunni undir nafninu textphoto.scss. 
 
 ## Unnið af
 
