@@ -57,6 +57,33 @@
     text-decoration: underline;
   }
 
+  &__cart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media(min-width: 800px) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__button {
+    background-image: url(img/cart.svg);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: $black;
+    font-family: $font-main;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    padding-right: $gutter;
+    padding-left: $gutter*2;
+    transition: color $transition;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
 
   
 }

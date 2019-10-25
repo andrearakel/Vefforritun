@@ -16,8 +16,7 @@
     margin-left: -($gutter / 2); 
 
     @media(max-width: 799px){
-      flex-direction: column;
-      padding-left: $gutter;      
+      flex-direction: column;     
     }
 
     @media(min-width: 800px) {
@@ -35,29 +34,47 @@
         width: 50%;
         margin-bottom: $gutter;
     }
-
-    @media(width: 800px) {
-      &:first-child {
-        margin-left: $gutter;
-      }
-
-      &:last-child {
-        margin-left: 0;
-      }
-    }
   }
 
   &__text {
+    padding-left: $gutter;
     display: flex; 
     flex-direction: column; 
     font-size: $size21;
-    margin-bottom: $gutter * 2; 
+    margin-bottom: $gutter * 2;
+    word-break: break-word; 
+
+    @media(min-width: $max-width + 1) {
+      padding: 0;
+    }
+  }
+
+  &__image {
+    padding-right: $gutter;
+    flex: 0 0 150px;
+
+    @media(max-width: 799px) {
+      padding-left: $gutter;
+    }
+
+    @media(min-width: $max-width) {
+      padding: 0;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
   }
 
   &__title {
+    padding-left: $gutter;
     font-family: $font-heading; 
     font-size: $size36; 
     margin-bottom: $gutter * 2; 
+
+    @media(min-width: $max-width + 1) {
+      padding: 0;
+    }
   }
 
   &__p {

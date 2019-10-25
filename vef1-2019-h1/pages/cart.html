@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vöruhúsið</title>
+    <title>Prílihúsið</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,600" rel="stylesheet">
     <link rel="stylesheet" href="../grid.css">
@@ -14,29 +14,29 @@
 
     <header class="header">
       <div class="header__text">
-      <h1 class="header__title">Prílihúsið</h1>
-      <div class="header__row">
-        <ul class="header__ul">
-          <li class="header__li"><a class="header__a" href="../index.html">FORSÍÐA</a></li>
-          <li class="header__li"><a class="header__a" href="products.html">VÖRUR</a></li>
-          <li class="header__li"><a class="header__a" href="course.html">NÁMSKEIÐ</a></li>
-          <li class="header__li"><a class="header__a" href="staff.html">STARFSFÓLK</a></li> 
-        </ul>
+        <h1 class="header__title">Prílihúsið</h1>
+        <div class="header__row">
+          <ul class="header__ul">
+            <li class="header__li"><a class="header__a" href="../index.html">FORSÍÐA</a></li>
+            <li class="header__li"><a class="header__a" href="products.html">VÖRUR</a></li>
+            <li class="header__li"><a class="header__a" href="course.html">NÁMSKEIÐ</a></li>
+            <li class="header__li"><a class="header__a" href="staff.html">STARFSFÓLK</a></li> 
+          </ul>
 
-        <div class="header__cart">
-          <img class="header__image" src="../img/cart.svg">
-          <a class="header__cartlink" href="cart.html"> Karfa (6)</a>
+          <div class="header__cart">
+              <a href="cart.html" class="header__button">Karfa (6)</a>
+          </div>
         </div>
-      </div>
       </div>
     </header>
 
     <main>
+
       <div class="cart">
         <h2 class="cart__title">Vörur í körfu</h2>
         <div class="cart__row">
           <div class="cart__col">
-              <img class="cart__image" src="../img/Backpack.jpg" alt="Bakpoki">
+            <img class="cart__image" src="../img/Backpack.jpg" alt="Bakpoki">
           </div>
           <div class="cart__coltext">
             <div class="cart__text">
@@ -57,17 +57,17 @@
               <img class="cart__image" src="../img/chalkbag.jpg" alt="Kalkpoki"> 
             </div>
             <div class="cart__coltext">
-            <div class="cart__text">
-              <h3 class="cart__h3">Kalkpoki</h3>
-              <p class="cart__p">Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
-              <p class="cart__price">4.900 kr.-</p>
+              <div class="cart__text">
+                <h3 class="cart__h3">Kalkpoki</h3>
+                <p class="cart__p">Kalkaðu hendurnar áður en þú verður kalkaður í hausnum.</p>
+                <p class="cart__price">4.900 kr.-</p>
+              </div>
+              <div class="cart__clickon">
+                <label class="cart__label">Fjöldi:<input class="cart__input" type="number" value="4"></label>    
+                <button class="cart__button"> <img class="cart__imgcart" src="../img/cart.svg"> Uppfæra</button>
+                <button class="cart__button"> <img class="cart__imgcart" src="../img/cart.svg"> Eyða úr körfu</button>
+              </div>
             </div>
-            <div class="cart__clickon">
-              <label class="cart__label">Fjöldi:<input class="cart__input" type="number" value="4"></label>    
-              <button class="cart__button"> <img class="cart__imgcart" src="../img/cart.svg"> Uppfæra</button>
-              <button class="cart__button"> <img class="cart__imgcart" src="../img/cart.svg"> Eyða úr körfu</button>
-            </div>
-          </div>
           </div>
         </div>
 
