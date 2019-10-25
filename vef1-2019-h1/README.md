@@ -2,6 +2,8 @@
 
 # Upplýsingar um keyrslu
 
+Þegar verkefnið hefur verið clone-að, þarf að keyra npm install á skipanalínunni. Síðan er npm run dev keyrt, það keyrir sass, sass-watch og browser-sync á sama tíma. 
+
 Slóð á síðuna aðgengileg á vefnum er: https://notendur.hi.is/~ars59/vefforritun/hopverkefni1/
 
 
@@ -17,6 +19,8 @@ Img:
 Myndir fyrir síðuna. 
 
 Index.html er forsíðan og er staðsett í aðalmöppu. SCSS skjalið fyrir main hluta hennar er að finna í SCSS möppunni undir nafninu textphoto.scss. 
+
+Package.json skrá hefur verið sett upp með viðeigandi tólum. Scriptur eru browser-sync, sass, sass-watch og stylelint.
 
 ## Unnið af
 
