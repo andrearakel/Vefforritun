@@ -28,8 +28,6 @@
     @media(max-width: $max-width) {
       margin: $gutter/2; 
     }
-
-
   }
 
   &__col {
@@ -48,8 +46,7 @@
     order: 2;
     
     @media(max-width: 799px) {
-      order: 0;
-      
+      order: 0; 
     }
   }
 

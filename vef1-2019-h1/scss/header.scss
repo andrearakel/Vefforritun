@@ -35,7 +35,7 @@
 
   &__li {
     display: flex; 
-    margin-right: $gutter/2;
+    margin-right: $gutter / 2;
     font-size: $size16;
   }
 
@@ -76,7 +76,7 @@
     letter-spacing: 0.1em;
     font-weight: bold;
     padding-right: $gutter;
-    padding-left: $gutter*2;
+    padding-left: $gutter * 2;
     transition: color $transition;
 
     &:hover {
