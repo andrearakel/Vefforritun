@@ -1,3 +1,25 @@
+# Hópverkefni 1 - upplýsingar
+
+# Upplýsingar um keyrslu
+
+Slóð á síðuna aðgengileg á vefnum er: 
+
+
+## Lýsing
+
+Hver síða hefur sitt eigið SCSS skjal. Þeir partar sem eru síðan eins á mörgum síðum eins og header, footer, upplýsingaformin og hnappar fengu síðan sína eigin SCSS skrá og vitnað er þá í viðeigandi classa inn í HTML-inu. Config SCSS inniheldur breytur sem notaðar voru mjög oft inn í hinum SCSS skjölunum. 
+
+## Unnið af
+
+Andrea Rakel Sigurðardóttir - ars59@hi.is
+
+
+---
+
+
+
+
+
 
 # Hópverkefni 1
 
