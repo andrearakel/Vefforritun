@@ -2,7 +2,7 @@
 
 # Upplýsingar um keyrslu
 
-Slóð á síðuna aðgengileg á vefnum er: 
+Slóð á síðuna aðgengileg á vefnum er: https://notendur.hi.is/~ars59/vefforritun/hopverkefni1/
 
 
 ## Lýsing
