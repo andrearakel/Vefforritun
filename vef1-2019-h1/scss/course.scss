@@ -1,6 +1,6 @@
-@import "scss/config.scss";
+@import "config.scss";
 
-.textphoto {
+.course {
   display: flex; 
   flex-wrap: wrap;
   margin-bottom: $gutter;
@@ -35,18 +35,16 @@
         width: 50%;
         margin-bottom: $gutter;
     }
-  }
 
-  &__row:nth-child(n) &__col:first-child {
-    order: 2;
-    
-    @media(max-width: 799px) {
-      order: 0; 
+    @media(width: 800px) {
+      &:first-child {
+        margin-left: $gutter;
+      }
+
+      &:last-child {
+        margin-left: 0;
+      }
     }
-  }
-
-  &__row:nth-child(2n) &__col:first-child {
-    order: 0;
   }
 
   &__text {
@@ -56,7 +54,7 @@
     margin-bottom: $gutter * 2; 
   }
 
-  &__h2 {
+  &__title {
     font-family: $font-heading; 
     font-size: $size36; 
     margin-bottom: $gutter * 2; 
@@ -66,5 +64,14 @@
     font-family: $font-main;
     margin-bottom: $gutter * 2; 
   }
- 
+
+  &__signbutton {
+    display: flex; 
+    justify-content: center;
+    margin-bottom: $gutter * 2; 
+  }
+
 }
+
+
+

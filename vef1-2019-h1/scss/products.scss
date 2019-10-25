@@ -1,98 +1,84 @@
 @import "scss/config.scss";
 
-.cart {
+.products {
 
-  &__title {
-    font-size: $size36;
-    font-family: $font-heading;
-    margin-bottom: $gutter;
-    
-    @media(max-width: $max-width) {
-      margin-left: $gutter; 
-    }
-    
-  }
+  margin: 0 auto;
+
 
   &__row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: $gutter * 2;
     margin-right: -($gutter / 2);
     margin-left: -($gutter / 2);
 
-    @media(max-width: 799px) {
+    @media(max-width: $max-width) {
       margin-left: $gutter / 2; 
     }
+
   }
 
   &__col {
+    display: flex;
+    flex-direction: column;
     width: 100%; 
     margin-bottom: $gutter; 
     padding-right: $gutter / 2; 
     padding-left: $gutter / 2;
 
-    @media(min-width: 800px) {
+    @media(min-width: 501px) {
+      width: 50%;
+    }
+
+    @media(min-width: 801px) {
       width: 33.333%;
-    }
+    }    
   }
 
-  &__coltext {
-    width: 100%; 
-    margin-bottom: $gutter; 
-    padding-right: $gutter / 2; 
-    padding-left: $gutter / 2;
-
-    @media(min-width: 800px) {
-      width: 66.667%; 
-    }
-
+  &__description {
+    display: flex;
+    flex: 1; 
   }
 
-  &__text {
-    height: 90%;
-    
-    @media(max-width:800px) {
-      height: 60%;
-    }
-  }
-
-  &__h3 {
+  &__title {
     font-family: $font-heading;
     font-size: $size36;
     margin-bottom: $gutter / 2;
   }
 
-  &__p {
-    font-size: $size18;
-    height: 60%;
+  &__image {
+    margin-bottom: $gutter;
+  }
 
-    @media(max-width:800px) {
-      height: 30%;
-    }
+  &__img {
+    max-width: 100%;
+  }
+
+  &__text {
+    margin-bottom: $gutter;
   }
 
   &__price {
-    font-size: $size21;
     font-family: $font-heading;
+    font-size: $size24;
     font-weight: bold;
-    margin-bottom: $gutter * 2;
+    margin-bottom: $gutter;
   }
 
   &__clickon {
-    margin-bottom: $gutter * 3;
-    display: flex; 
+    display: flex;
     align-items: flex-end;
   }
 
   &__label {
-    display: block;
-    flex: 0 1 100px;
-    margin-right: $gutter / 2; 
+    flex: 1;
+    margin-right: $gutter / 2;
     font-size: $size16;
   }
 
   &__input {
-    width: 150px;
+    width: 100%;
     padding: 8px;
     margin-right: 4px;
     border: 1px solid $black;
@@ -120,10 +106,7 @@
     height: 15px;
   }
 
-  &__buybutton {
-    display: flex; 
-    justify-content: center;
-    margin-bottom: $gutter * 2; 
-  }
+
+
 
 }

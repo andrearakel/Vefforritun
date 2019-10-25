@@ -12,14 +12,70 @@
     margin-bottom: $gutter * 2;
     margin-right: -($gutter / 2);
     margin-left: -($gutter / 2);
+
+    @media(max-width: $max-width) {
+      margin-left: $gutter / 2; 
+    }
+
   }
 
   &__col {
-    width: 50%; 
+    width: 100%; 
     margin-bottom: $gutter; 
     padding-right: $gutter / 2; 
     padding-left: $gutter / 2;
 
+    @media(min-width: 800px) {
+      width: 50%;
+    }
+
+    @media(width: 800px) {
+      &:last-child {
+        padding-left: 0;
+      }
+    }
   }
+
+  &__fieldset {
+    border: 0 none;
+  }
+
+  &__legend {
+    font-family: $font-heading;
+    font-size: $size36;
+    margin-bottom: $gutter / 2;
+  }
+
+  &__formrow {
+    margin-bottom: $gutter / 2; 
+    display: flex;
+    flex-wrap: flex;
+
+    @media(min-width: 800px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__label {
+    flex: 0 1 150px; 
+  }
+
+  &__input, &__select { 
+    flex: 0.76;
+    padding: 8px; 
+    border: 1px solid $black; 
+    border-radius: 2px;
+
+    @media(max-width: 800px) {
+      flex: 0.85;
+    }
+  }
+
+  &__dateselect {
+    padding: 8px; 
+    border: 1px solid $black; 
+    border-radius: 2px;
+  }
+
 
 }
