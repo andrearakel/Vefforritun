@@ -23,8 +23,18 @@
   * Ef notandi ýtir á "cancel" þá er sótt niðurstöður með getResults() og þær birtar með alert().
   */
 function start() {
-  play();
+
+  alert('Velkomin/nn í leikinn');
+
+  do {
+    play();
+  } while(confirm("Má bjóða þér að spila annan leik?"));
+
+  alert(getResults());
+
 }
+
+
 
 /**
  * Spilar einn leik. Sér um að:
@@ -41,7 +51,34 @@ function start() {
  * Þarf aðútfæra með lykkju og flæðisstýringum
  */
 function play() {
-  const random = randomNumber(1,100;
+  const random = randomNumber(0,100);
+  console.log(random);
+  
+  let attempts = 0;
+  let rightAnswer = false; 
+  
+  do {
+  const input = prompt('Veldu tölu milli 0 og 100');
+
+  if(input === null) {
+    break;
+  }
+
+  const playerGuess = parseGuess(input);
+  
+  if(playerGuess === random) {
+    correct = true;
+  }
+
+  alert(getResponse(playerGuess, random));
+  attempts++;
+
+  } while (!rightAnswer);
+
+    games.push(attempts);
+    alert(`Þú giskaðir rétt í ${attempts} tilraun`);
+    return true;
+  
 }
 
 /**
@@ -54,6 +91,12 @@ function play() {
  *    "Þú spilaðir engann leik >_<"
  */
 function getResults(){
+  const gamesPlayed = games.length;
+  const averageNoGuessed = calculateAverage();
+
+  const results = `Þú spilaðir ${gamesPlayed} leiki. Meðalfjöldi ágiskana var ${averageNoGuessed.toFixed(2)}`;
+
+  return results;
 
 }
 
@@ -67,6 +110,17 @@ function getResults(){
  */
 function calculateAverage(){
 
+  let sum = 0;
+
+  var i; 
+  for(i = 0; i < games.length; i++) {
+    sum += games[i];
+  }
+
+  const average = sum / games.length; 
+
+  return average; 
+  
 }
 
 /**
@@ -74,6 +128,15 @@ function calculateAverage(){
  * Ef ekki er hægt að ná tölu úr input er skilað null
  */
 function parseGuess(input){
+
+  const playerAnswer = parseInt(input, 10);
+
+  if(Number.isNaN(playerAnswer)) {
+    return null;
+  }
+  else {
+    return playerAnswer;
+  }
 
 }
 
@@ -93,7 +156,26 @@ function parseGuess(input){
  * Math.abs skilar algildi tölu: |a| = Math.abs(a)
  */
 function getResponse(guess, correct){
-  return 'Ekki rétt';
+
+  const diffAbs = Math.abs(guess - correct);
+
+  if(guess < 0 || isNaN(guess)) {
+    return 'Ekki rétt';
+  } else if (diffAbs == 0) {
+    return 'Rétt';
+  } else if (diffAbs < 5) {
+    return 'Mjög nálægt';
+  } else if (diffAbs < 10) {
+    return 'Nálægt';
+  } else if (diffAbs < 20) {
+    return 'Frekar nálægt';
+  } else if (diffAbs < 50) {
+    return 'Langt frá';
+  } else {
+    return 'Mjög langt frá';
+  }
+   
+  
 }
 
 /**
