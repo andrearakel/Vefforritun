@@ -2,12 +2,25 @@
 
 # Upplýsingar um keyrslu
 
+Þegar verkefnið hefur verið clone-að, þarf að keyra npm install á skipanalínunni. Síðan er npm run dev keyrt, það keyrir sass, sass-watch og browser-sync á sama tíma. 
+
 Slóð á síðuna aðgengileg á vefnum er: https://notendur.hi.is/~ars59/vefforritun/hopverkefni1/
 
 
 ## Lýsing
 
+SCSS: 
 Hver síða hefur sitt eigið SCSS skjal. Þeir partar sem eru síðan eins á mörgum síðum eins og header, footer, upplýsingaformin og hnappar fengu síðan sína eigin SCSS skrá og vitnað er þá í viðeigandi classa inn í HTML-inu. Config SCSS inniheldur breytur sem notaðar voru mjög oft inn í hinum SCSS skjölunum. 
+
+Pages: 
+Inniheldur HTML skjöl fyrir vörur, námskeið, starfsfólk og körfu. 
+
+Img: 
+Myndir fyrir síðuna. 
+
+Index.html er forsíðan og er staðsett í aðalmöppu. SCSS skjalið fyrir main hluta hennar er að finna í SCSS möppunni undir nafninu textphoto.scss. 
+
+Package.json skrá hefur verið sett upp með viðeigandi tólum. Scriptur eru browser-sync, sass, sass-watch og stylelint.
 
 ## Unnið af
 

@@ -55,19 +55,21 @@ function play() {
   console.log(random);
   
   let attempts = 0;
-  let rightAnswer = false; 
+  let rightAnswer; 
   
   do {
-  const input = prompt('Veldu tölu milli 0 og 100');
+    rightAnswer = false; 
 
-  if(input === null) {
-    break;
-  }
+    const input = prompt('Veldu tölu milli 0 og 100');
+
+    if(input === null) {
+      break;
+    }
 
   const playerGuess = parseGuess(input);
   
   if(playerGuess === random) {
-    correct = true;
+    rightAnswer = true;
   }
 
   alert(getResponse(playerGuess, random));
@@ -76,7 +78,7 @@ function play() {
   } while (!rightAnswer);
 
     games.push(attempts);
-    alert(`Þú giskaðir rétt í ${attempts} tilraun`);
+
     return true;
   
 }
