@@ -51,6 +51,7 @@ function start() {
  * Þarf aðútfæra með lykkju og flæðisstýringum
  */
 function play() {
+
   const random = randomNumber(0,100);
   console.log(random);
   
@@ -66,14 +67,14 @@ function play() {
       break;
     }
 
-  const playerGuess = parseGuess(input);
+    const playerGuess = parseGuess(input);
   
-  if(playerGuess === random) {
-    rightAnswer = true;
-  }
+    if(playerGuess === random) {
+      rightAnswer = true;
+    }
 
-  alert(getResponse(playerGuess, random));
-  attempts++;
+    alert(getResponse(playerGuess, random));
+    attempts++;
 
   } while (!rightAnswer);
 
@@ -93,6 +94,7 @@ function play() {
  *    "Þú spilaðir engann leik >_<"
  */
 function getResults(){
+
   const gamesPlayed = games.length;
   const averageNoGuessed = calculateAverage();
 
