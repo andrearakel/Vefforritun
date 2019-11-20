@@ -1,4 +1,6 @@
 // todo vísa í rétta hluti með import
+import {favourites} from './storage';
+import {getRandomImage} from './nasa-api';
 
 // breytur til þess að halda utan um html element nodes
 let title; // titill fyrir mynd á forsíðu
@@ -12,6 +14,8 @@ let image; // object sem inniheldur núverandi mynd á forsíðu.
  * ásamt titli og texta.
  */
 function getNewImage() {
+
+  
 
 }
 
@@ -27,6 +31,10 @@ function saveCurrentImage() {
  *
  */
 export default function init(apod) {
+
+  newImageButton = document.querySelector('#new-image-button');
+  saveImageButton = document.querySelector('#save-image-button');
+  showFavoritesButton = document.querySelector()
 
 }
 
